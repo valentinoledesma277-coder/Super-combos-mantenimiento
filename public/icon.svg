@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c" />
+      <stop offset="100%" stop-color="#141417" />
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bef264" />
+      <stop offset="100%" stop-color="#84cc16" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Dark Background with squircle border -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" stroke="#27272a" stroke-width="6" />
+  <!-- Lime Accent circular halo -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#a3e635" stroke-opacity="0.12" stroke-width="2" />
+  
+  <g transform="translate(68, 76)">
+    <!-- Cart & Combo icon stylized in Lime -->
+    <path d="M40 70 L95 70 L145 250 L320 250 L350 120 L120 120" fill="none" stroke="url(#limeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Grid -->
+    <path d="M175 145 L190 230 M245 145 L245 230 M315 145 L300 230" stroke="#a3e635" stroke-opacity="0.6" stroke-width="10" stroke-linecap="round" />
+    <path d="M135 185 L335 185" stroke="#a3e635" stroke-opacity="0.6" stroke-width="10" stroke-linecap="round" />
+    <!-- Wheels in solid lime -->
+    <circle cx="170" cy="300" r="28" fill="#a3e635" />
+    <circle cx="295" cy="300" r="28" fill="#a3e635" />
+    <circle cx="170" cy="300" r="12" fill="#000000" />
+    <circle cx="295" cy="300" r="12" fill="#000000" />
+    
+    <!-- Super Star Badge / Combo Flame in Lime -->
+    <path d="M250 20 L265 60 L310 65 L275 95 L285 140 L245 115 L205 140 L215 95 L180 65 L225 60 Z" fill="url(#limeGrad)" filter="url(#glow)" />
+  </g>
+</svg>

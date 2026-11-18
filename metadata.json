@@ -1,0 +1,6 @@
+{
+  "name": "Super Combos - Gestión Integral",
+  "description": "Sistema profesional de gestión comercial: control de stock, proveedores, cronograma de pedidos de clientes, compras y ventas 100% offline con estética Negro y Verde Lima.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

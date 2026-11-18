@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-lime-primary: #a3e635; /* Lime 400 */
+    --color-lime-hover: #bef264; /* Lime 300 */
+    --color-lime-dark: #65a30d; /* Lime 600 */
+  }
+
+  body {
+    background-color: #050505;
+    color: #f3f4f6;
+  }
+
+  /* Scrollbar personalizado estilo Dark + Lime */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f0f11;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a3e635;
+  }
+}
+
+/* Reglas de impresión para comprobantes térmicos */
+@media print {
+  @page {
+    margin: 2mm;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header,
+  aside,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  #direct-print-portal {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  #printable-ticket {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 4px !important;
+    font-size: 11px !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
